@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Bisuteria</title>
+  <style>
+    body {
+      font-family: "Lucida Bright", serif;
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    /* Menú superior */
+    nav {
+      background-color: #000000;
+      display: flex;
+      align-items: center;
+      justify-content: space-between; /* Logo a la izquierda, enlaces a la derecha */
+      padding: 10px 20px;
+    }
+
+    .logo {
+      display: flex;
+      align-items: center;
+    }
+
+    nav img {
+      height: 50px;
+      cursor: pointer;
+    }
+
+    .menu-links {
+      display: flex;
+      gap: 10px;
+    }
+
+    .menu-links a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      background-color: #9060a1;
+      padding: 8px 15px; /* Espacio interno solo del botón */
+      margin: 5px; /* Espacio externo solo alrededor del botón */
+      border-radius: 5px;
+      transition: background-color 0.3s;
+      display: inline-block;
+    }
+
+    .menu-links a:hover {
+      background-color: #734d82; /* Un tono más oscuro al pasar el mouse */
+    }
+
+    header {
+      text-align: center;
+      margin: 30px 0;
+    }
+
+    header h1 {
+      font-size: 28px;
+    }
+
+    /* Galería */
+    .galeria {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px;
+    }
+
+    .imagen {
+      padding: 15px;
+      border-radius: 10px;
+      background-color: #9060A1;
+      text-align: center;
+    }
+
+    .imagen img {
+      width: 100%;
+      max-width: 250px;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .imagen img:hover {
+      transform: scale(1.05);
+    }
+
+    .imagen p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú superior -->
+<nav>
+    <div class="logo">
+      <a href="index.html"><img src="../sonnemond/sonnemondlogohtml.png" alt="Logo"></a>
+    </div>
+    <div class="menu-links">
+       <a href="us.html">About Us</a>
+      <a href="shop.html">Shop</a>
+      <a href="diy.html">Diy</a>
+    </div>
+  </nav>
+
+  <header>
+    <h1>Crochet</h1>
+  </header>
+
+  <!-- Galería -->
+  <div class="galeria" id="productos">
+    <div class="imagen">
+      <a href="flor.html"><img src="../DSC01418.jpg" alt="Producto 1"></a>
+      <p>Broche de Flor</p>
+    </div>
+    <div class="imagen">
+      <a href="bandana.html"><img src="../DSC01337.jpg" alt="Producto 2"></a>
+      <p>Bandana de Calavera</p>
+    </div>
+    <div class="imagen">
+      <a href="bolsa.html"><img src="../DSC01328.jpg" alt="Producto 3"></a>
+      <p>Mini Bolsa Calavera</p>
+    </div>
+ 
+</div>
+
+  <!-- Sección contacto -->
+  <footer id="contacto" style="text-align:center; padding:20px;">
+    <p>Contacto: sonnemondcoven@gmail.com | Tel: 646-123-8785</p>
+  </footer>
+
+</body>
+</html>

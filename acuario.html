@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Producto 1</title>
+  <style>
+    body {
+      font-family: "Lucida Bright", serif;
+      background-color: #000;
+      margin: 0;
+      padding: 0;
+      color: white;
+    }
+
+    /* Menú superior */
+    nav {
+      background-color: black;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 10px 20px;
+    }
+
+    /* Logo */
+    nav img {
+      height: 50px;
+      cursor: pointer;
+    }
+
+    /* Opciones del menú */
+    .menu-opciones {
+      display: flex;
+      gap: 10px;
+    }
+
+    .menu-opciones a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+      padding: 8px 15px; /* Padding individual */
+      margin: 0 5px;     /* Margin individual */
+      background-color: #9060A1;
+      border-radius: 8px;
+      transition: background-color 0.3s;
+    }
+
+    .menu-opciones a:hover {
+      background-color: #7a4d8d;
+    }
+
+    /* Contenedor principal */
+    .contenedor {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      padding: 20px;
+    }
+
+    /* Imagen del producto */
+    .imagen {
+      flex: 1 1 40%;
+      background-color: #9060A1;
+      padding: 15px;
+      border-radius: 10px;
+    }
+
+    .imagen img {
+      width: 100%;
+      border-radius: 8px;
+    }
+
+    /* Información del producto */
+    .info {
+      flex: 1 1 50%;
+      background-color: white;
+      color: black;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .info h1 {
+      margin-top: 0;
+    }
+
+    .precio {
+      font-size: 20px;
+      font-weight: bold;
+      color: #007700;
+      margin: 10px 0;
+    }
+
+    .boton {
+      display: inline-block;
+      padding: 10px 20px;
+      background: #9060A1;
+      color: white;
+      text-decoration: none;
+      border-radius: 5px;
+    }
+
+    .boton:hover {
+      background: #7a4d8d;
+    }
+
+    @media (max-width: 700px) {
+      .contenedor {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Menú superior -->
+  <nav>
+    <a href="index.html">
+      <img src="../sonnemond/sonnemondlogohtml.png" alt="Logo">
+    </a>
+     <div class="menu-opciones">
+      <a href="us.html">About Us</a>
+      <a href="shop.html">Shop</a>
+      <a href="diy.html">Diy</a>
+    </div>
+  </nav>
+
+  <!-- Contenido -->
+  <div class="contenedor">
+    <div class="imagen">
+      <img src="../DSC01389.jpg" alt="Producto 1">
+    </div>
+    <div class="info">
+      <h1>Phone Strap Acuario&nbsp;</h1>
+      <p>Straps artesanales para teléfono, creados a mano con detalles inspirados en la magia y el misticismo. Cada diseño combina cuentas, dijes y colores que evocan protección, energía positiva y encanto único. Además de ser un accesorio práctico para llevar tu teléfono con seguridad, es un amuleto personal que te acompaña a donde vayas, irradiando estilo y buena vibra.</p>
+      <div class="precio">$60 MXN</div>
+      <a href="#" class="boton">Comprar ahora</a>
+    </div>
+  </div>
+
+</body>
+</html>

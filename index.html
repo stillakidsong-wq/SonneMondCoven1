@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Página Principal</title>
+  <style>
+    body {
+      font-family: Constantia, "Lucida Bright", "DejaVu Serif", Georgia, "serif";
+      background-color: #000000;
+      margin: 20px;
+      padding: 20px;
+    }
+
+    header {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 30px;
+    }
+
+    header img {
+      height: 60px;
+    }
+
+    nav {
+      display: flex;
+      gap: 10px;
+      flex-wrap: wrap;
+    }
+
+    nav a {
+      padding: 10px 15px;
+      background-color: #9060a1;
+      text-decoration: none;
+      color: #ffffff;
+      border-radius: 8px;
+      border: 1px solid #bbb;
+      transition: background-color 0.3s;
+    }
+
+    nav a:hover {
+      background-color: #d0d0ff;
+    }
+
+    .contenido {
+      padding: 10px;
+      border: 2px solid #ccc;
+      background-color: #fff;
+      border-radius: 10px;
+      margin-bottom: 30px;
+    }
+
+    .secciones {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+    }
+
+    .seccion {
+      flex: 1 1 20%;
+      padding: 20px;
+      margin: 10px 0;
+      border: 2px solid #bbb;
+      background-color: #9060a1;
+      border-radius: 30px;
+      text-align: center;
+    }
+
+    .seccion img {
+      width: 100%;
+      max-width: 300px;
+      height: auto;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: transform 0.3s;
+    }
+
+    .seccion img:hover {
+      transform: scale(1.05);
+    }
+
+    .seccion p {
+      margin-top: 10px;
+      font-weight: bold;
+    }
+
+    @media (max-width: 700px) {
+      .secciones {
+        flex-direction: column;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Encabezado con menú -->
+  <header>
+    <a href="index.html">
+      <img src="../sonnemond/sonnemondlogohtml.png" alt="Inicio">
+    </a>
+    <nav>
+      <a href="us.html">About Us</a>
+      <a href="shop.html">Shop</a>
+      <a href="diy.html">Diy</a>
+    </nav>
+  </header>
+
+  <!-- Contenido principal -->
+  <div class="contenido">
+    <h1>Bienvenido al aquellarre</h1>
+    <p>Somos una marca independiente de crochet y bisutería personalizada, nacida del deseo de crear con las manos, el alma y la intuición.  Más allá de un producto, somos un proyecto con propósito: buscamos crecer, crear comunidad y construir “Nuestro Aquelarre”, un colectivo de arte y magia donde todas las formas de expresión tengan espacio. </p>
+  </div>
+
+  <!-- Secciones con imágenes que enlazan a otras páginas -->
+  <div class="secciones">
+    <div class="seccion">
+      <a href="bisuteria.html">
+        <img src="../DSC01348.jpg" alt="Ir a Página A">
+      </a>&nbsp;
+      <p>Bisuteria</p>
+    </div>
+    <div class="seccion">
+      <a href="crochet.html">
+      <img src="../DSC01329.jpg" alt="Ir a Página B">
+      </a>
+      <p>Crochet</p>
+    </div>
+  </div>
+
+</body>
+</html>
